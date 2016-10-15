@@ -1,0 +1,6 @@
+FROM alpine
+
+RUN apk update
+RUN apk add bind bind-dev gcc libcap libcap-dev libpcap libpcap-dev make musl-dev openssl-dev
+
+COPY dnsperf.tgz /tmp/dnsperf.tgz
